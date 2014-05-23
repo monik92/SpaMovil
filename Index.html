@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Validacion de usuarios</title>
+  <link rel="stylesheet" href="jquery.mobile.css" />
+  <link rel="stylesheet" href="csspersonal.css" />
+  <link rel="stylesheet" href="mylogin.css" />
+  <script src="jquery.js"></script>
+  <script src="jquery.mobile.js"></script>
+  <style type="text/css">
+body {
+    background: url(img/plumas6.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+</style>
+</head>
+ 
+<body> 
+ 
+<div data-role="page" id="inicio" data-theme="b">
+ 
+	<div data-role="header">
+		<h1>Login de Usuario</h1>
+	</div>
+    
+    <div class="ui-grid-solo my-breakpoint">
+  <div style="text-align:center" class="ui-block-a"><img src="img/Bastet1.png"></div>
+  </div>
+
+	<div data-role="content" >	
+		<form id="formulario" >
+      
+      			<label> Usuario </label>
+      			<input type="text" id="nombredeusuario" name="nombredeusuario">
+      
+      			<label> Contraseña </label>
+     			<input type="password" id="clave" name="clave" >
+ 
+      			<input type="submit" value="Login" id="botonLogin">
+      
+    		</form>		
+	</div>
+	 
+</div>
+ 
+<div data-role="page" id="citas" data-theme="b">
+ 
+	<div data-role="header">
+		<h1>Listado de citas</h1>
+	</div>
+
+  <div class="ui-grid-solo my-breakpoint">
+  <div style="text-align:center" class="ui-block-a"><img src="img/Bastet1.png"></div>
+  </div>
+ 
+	<div data-role="content">	
+	  <h3>Día</h3>
+    <h4>Hora</h4>
+    <p>Descripción</p>
+	</div>
+ 
+</div>
+ 
+
+ 
+</body>
+</html>
